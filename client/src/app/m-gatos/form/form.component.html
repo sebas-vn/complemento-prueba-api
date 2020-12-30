@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-md-4">
+    <div class="card card-body">
+      <form (submit)="edit ? updateGato() : submitGato()">
+        <div class="mb-3">
+          <label for="nombreGato" class="form-label">Nombre</label>
+          <input type="text" class="form-control" name="nombre" [(ngModel)]="gato.nombre" id="nombreGato" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="razaGato" class="form-label">Raza</label>
+          <input type="text" class="form-control" name="raza" id="razaGato" [(ngModel)]="gato.raza">
+        </div>
+        <div class="mb-3">
+          <label for="razaGato" class="form-label">Edad</label>
+          <input type="number" class="form-control" name="edad" id="razaGato" [(ngModel)]="gato.edad">
+        </div>
+
+        <div class="mb-3">
+          <button type="button" class="btn btn-primary" id="modalFavoritos">
+            Seleccionar Foto
+          </button>
+        </div>
+
+        <div id="actiones">
+          <button type="submit" class="btn btn-success">Guardar</button>
+
+          <button type="button" class="btn btn-danger" (click)="cancelForm()" >Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-md-8">
+    <div id="imageContainer">
+
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,31 @@
+.list-group-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-body {
+  padding: 0;
+}
+
+#actions {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.badge {
+  width: 100%;
+}
+
+.row {
+  margin-top: 5rem;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
